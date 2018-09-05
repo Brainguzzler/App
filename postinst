@@ -1,0 +1,8 @@
+#!/bin/sh
+# postinst script
+
+PORTAL_PATH=/srv/www/smfpl-payment-rack-client
+
+chown root:root /etc/nginx/sites-available/simferopol-web-client.conf
+
+chown -R root:root $PORTAL_PATH
