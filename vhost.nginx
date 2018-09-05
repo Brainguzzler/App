@@ -1,0 +1,24 @@
+server {
+	listen 80;
+	server_name 127.0.0.1 localhost;
+
+	root /srv/www/smfpl-payment-rack-client/;
+
+	# Add index.php to the list if you are using PHP
+	index index.html;
+
+	location ~ /\.ht {
+		deny all;
+	}
+
+	location / {
+	    gzip_static on;
+
+	    try_files	$uri $uri/ /index.html;
+
+	    # Nginx by default forbids POST(is received from Bank side) to static files
+	    # so we should use this hack:
+	    error_page  405     =200 $uri;
+	    error_page  404     =200 index.html;
+	}
+}
