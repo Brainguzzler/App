@@ -1,0 +1,26 @@
+{
+  "name": "smfpl-payment-rack-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "moment": "^2.21.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-screen-keyboard": "^1.4.1",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
+    "smprc-njsp-mediator": "file:../../smprc-js-modules/smprc-njsp-mediator/",
+    "smprc-njsp-network-manager": "file:../../smprc-js-modules/smprc-njsp-network-manager",
+    "smprc-njsp-network-manager-jsonrpc": "file:../../smprc-js-modules/smprc-njsp-network-manager-jsonrpc/",
+    "styled-components": "^3.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
